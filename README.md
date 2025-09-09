@@ -78,14 +78,6 @@ pizza-project/
 │── .gitignore
 │── README.md
 
-📸** Screenshots**
-
-
-<img width="926" height="435" alt="{DEBDA5F6-9CB0-42BB-A781-D832564B2D87}" src="https://github.com/user-attachments/assets/954e8ba6-808b-435c-96f1-d7ac17bd8df4" />
-<img width="917" height="441" alt="{3364E71E-A788-4798-8D06-E79332F3036F}" src="https://github.com/user-attachments/assets/b70175f3-f6d9-4457-b28b-bd9e73476df4" />
-<img width="958" height="200" alt="{7536331A-DF1F-49B2-A41C-C966CCF9EF10}" src="https://github.com/user-attachments/assets/927967df-812b-4876-a546-15108c2ab5b1" />
-
-
 🤝** Contributing**
 
 Fork the repo
