@@ -1,0 +1,116 @@
+<!-- # #create python virtual env
+# python -m venv venv
+
+# #actiavte env
+# venv\Scripts\actiavte
+#.\venv\Scripts\Activate.ps1
+
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Install virtualenv
+pip install virtualenv
+
+# #dependencies
+# pip install flask flask-cors flask-pymongo flask-jwt-extended python-dotenv werkzeug
+
+#pip install -r requirements.txt
+
+# #ReactVite
+# # from project root
+# npm create vite@latest pizza-frontend -- --template react
+
+# #in frontend run 
+npm install axios
+
+# npm install #for node_modules
+# # then npm run dev -->
+
+
+
+
+<!-- 
+
+############ FOR TAILWIND
+npx tailwindcss init -p -->
+<!-- # from your project root
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+# Front-end application starts: Let's say you open a web app in a browser tab. The web app is running at https://localhost:3000. The browser tab's origin is now set to https://localhost:3000.
+# A request is made: Your web app's code tries to fetch data from your back-end, which is running at a different origin (port): https://localhost:5713.
+# Browser adds a single Origin header: Your browser automatically adds an Origin header to the request. The value of this header will be https://localhost:3000.
+# Back-end receives the request: The back-end server receives the request with the Origin header.
+# CORS middleware performs a check: The CORS configuration on the back-end (CORS(app, origins=["https://localhost:5713", "https://localhost:3000"], ...) checks the value of the Origin header. It sees that https://localhost:3000 is on its list of allowed origins.
+# Back-end sends Access-Control headers: Since the origin is allowed, the back-end adds the necessary CORS headers to its response. Because supports_credentials=True, it adds:
+# Access-Control-Allow-Origin: https://localhost:3000
+# Access-Control-Allow-Credentials: true
+# Browser allows the response: The browser receives the response and sees that the back-end has given explicit permission for https://localhost:3000 to access the data. It then allows the data to be read by your front-end code. -->
+
+<!-- 
+
+Summary:
+frontend running on one origin with diff port and backend on diff origin with diff port 
+frontend make request ,browser auto add origin (header) backend CORS check origin if match then give data -->
+
+
+<!-- 
+
+JWT:
+JWT (JSON Web Token) → A secure way to send information between frontend (React, for example) and backend (Flask) as a "signed token".
+
+This token proves that the user is authenticated (logged in). -->
+
+
+
+<!-- 
+
+# What is an origin?
+# From the URL https://localhost:5713, the origin is the combination of:
+# Scheme (Protocol): https
+# Hostname (Domain): localhost
+# Port: 5713
+# The complete, unique origin is https://localhost:5713 -->
+
+<!-- 
+#check backend
+
+. Double-check your backend login directly
+
+Run this in terminal (replace email/password with yours):
+
+PowerShell (Windows):
+
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/auth/login" -Method Post `
+  -Headers @{ "Content-Type" = "application/json" } `
+  -Body '{"email":"khansaurooj912@gmail.com","password":"YOUR_PASSWORD_HERE"}'
+
+
+Expected:
+
+{ "access_token": "..." }
+
+
+If this works → backend is fine → problem is frontend.
+
+If this fails → maybe you typed a different password at register than at login. -->
